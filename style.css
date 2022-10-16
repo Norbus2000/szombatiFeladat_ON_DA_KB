@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    overflow: auto;
+    width: 2000px;
+    height: 2000px;
+}
+#ablak {
+  border: 1px solid black;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    z-index: 10;
+}
+
+#fejlec {
+  background-color: white;
+  grid-area: f;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bevitelPan {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px;
+}
+#bevitel {
+  grid-area: bp;
+}
+
+#bevitelPan button {
+  width: 30%;
+}
+
+#cont {
+  display: grid;
+  background-color: rgb(214, 217, 223);
+    height: 100%;
+  grid-template-areas:
+    "bp bp bp ud"
+    "bp bp bp ip"
+    "bp bp bp k"
+    "bp bp bp koz";
+    max-width: 300px;
+    height: 221px;
+   
+}
+#ujraDiv {
+  grid-area: ud;
+}
+#inputPin {
+  grid-area: ip;
+}
+#konzolra {
+  grid-area: k;
+}
+#kozepre {
+  grid-area: koz;
+}
+#ablakBtns button{
+    border: none;
+    background-color: transparent;
+}
+ #lerak:hover, #screenbtn:hover {
+    background-color:rgb(229, 229, 229) ;
+}
+#bezar:hover{
+    background-color:red ;
+    color: white;
+}
